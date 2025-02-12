@@ -6,6 +6,7 @@ from datetime import datetime
 import asyncio
 import os 
 from dotenv import load_dotenv
+import aiohttp 
 
 load_dotenv()
 
@@ -24,6 +25,18 @@ async def make_groq_request(messages: List[Dict[str, str]], temperature: float =
         "temperature": temperature,
         "max_tokens": 1000,
     }
+
+
+    # try:
+    #     async with aiohttp.ClientSession() as session:
+    #         async with session.post(BASE_URL, headers=headers, json=data) as response:
+    #             response.raise_for_status()
+    #             return await response.json()
+    # except aiohttp.ClientError as e:
+    #     print(f"HTTP error occurred: {e}")
+    #     return None
+
+
     
     try:
         async with httpx.AsyncClient() as client:
