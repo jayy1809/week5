@@ -1,0 +1,283 @@
+
+ # this is from 11b parameter model
+
+**This image is a collage of three distinct images, each with its unique description and location within the collage.**
+
+**First Image (Top Left):**
+
+*   **Location:** Top left corner
+*   **Description:** The image features a water bottle wrapped in a blue cloth, placed in front of a gray wall with the word "Friendly" written on it. The water bottle is positioned on a white surface, resembling a table or counter, with a mirror-like reflection of the surrounding environment.
+
+**Second Image (Top Right):**
+
+*   **Location:** Top right corner
+*   **Description:** This image shows a tall, white robot with blue accents, standing on a gray tiled floor. The robot has a cylindrical body and a blue screen on its front. Some objects, including a blue bag and a gray sign with the word "PERFECT" written on it, are visible behind the robot.
+
+**Third Image (Bottom Left):**
+
+*   **Location:** Bottom left corner
+*   **Description:** In this image, a woman in a blue shirt and black pants is standing on a gray tiled floor, accompanied by a row of chairs. Behind her, a gray sign with the word "PERFECT" written on it is visible, along with a gray wall.
+
+**Fourth Image (Bottom Right):**
+
+*   **Location:** Bottom right corner
+*   **Description:** The final image depicts a white robot with a blue screen on its front, situated on a gray tiled floor. A blue bag and a gray sign with the word "PERFECT" written on it are visible behind the robot, with a gray wall in the background.
+
+**Additional Details:**
+
+*   A gray wall with a white door is visible in the background of each image.
+*   A gray sign with the word "PERFECT" written on it appears in both the second and third images.
+*   A row of chairs is visible in the third image in the bottom left corner.
+
+In summary, this image is a collage consisting of three distinct images, each with its own description and location within the collage.
+Time Taken: 2.7836270332336426
+
+
+
+
+
+
+
+
+
+
+
+
+
+# 90b parameter model output 
+
+The image is a collage containing five distinct photos, each showcasing a unique aspect of a water cooler and its surroundings.
+
+**Top-left photo:**
+In this image, we see a close-up view of the water cooler's container, which appears to be made of clear plastic or glass. The container is filled with water and has a small opening at the bottom, likely for dispensing the water into cups or other containers.
+
+**Top-right photo:**
+This photo shows the water cooler from a slightly different angle, with the container still visible but now accompanied by a blue cloth covering the top. The background of this image suggests that the water cooler is located in a public restroom or office setting.
+
+**Middle-right photo:**
+Here, we see the water cooler in its entirety, including the base and the container. The base appears to be white and has a few buttons or controls on the front. The container is still covered with the blue cloth, and the background suggests that the water cooler is situated in a hallway or corridor.
+
+**Bottom-left photo:**
+In this image, the water cooler is shown from a different perspective, with the container visible but now without the blue cloth cover. The background of this photo appears to be a workshop or factory setting, with various tools and equipment visible in the distance.
+
+**Bottom-right photo:**
+This final photo shows the water cooler in a more commercial setting, possibly a store or office building. The container is still visible, but now it is surrounded by other objects and furniture, giving a sense of context and environment.
+
+Overall, these five photos provide a comprehensive view of the water cooler, showcasing its design, functionality, and various uses in different settings.
+Time Taken: 4.348771810531616
+
+
+
+
+
+
+
+
+
+
+
+
+
+getting a structered json response from the image using groq , 90b parameter
+
+{
+   "objects": [
+      {"water_cooler": "<$WaterCooler>}"},
+      {"water_cooler_cover": "<$WaterCoolerCover>"},
+      {"floors": "<Floors with mosaic-like design>"},
+      {"chairs": "<White office chairs with black armrests>"},
+      {"desks": "<Long white desk>"},
+      {"white_sinks": "<White sinks>"},
+      {"hand_drying_machine": "<One white dryer>"},
+      {"large_water_cooler_bag": "<$LargeWaterCoolerBag>}"},
+      {"sticker_on_floor": "<Sticker labeled with the image of a sandwich>"},
+      {"woman": "<Woman with brown hair wearing a dark pants and a white t-shirt>"},
+      {"tiled_floor": "<$TiledFloor>"},
+      {"furniture": "<$Furniture>()"},
+      {"mirrors": "<Mirrors on the walls>"},
+      {"posts": "<$Posts>()"},
+      {"door_handles": "<Two door handles with two handles each"}
+   ]
+}
+Time Taken: 3.6053786277770996
+
+
+
+
+
+
+from 11b parameter structured output is 
+{
+   "images": [
+     {
+       "water cooler": {
+         "type": "white and blue",
+         "position": "left",
+         "size": "large"
+       },
+       "background": {
+         "color": "gray and blue",
+         "size": "large"
+       },
+       "tarp": {
+         "color": "blue",
+         "size": "medium"
+       }
+     },
+     {
+       "water cooler": {
+         "type": "white and blue",
+         "position": "right",
+         "size": "medium"
+       },
+       "chair": {
+         "color": "black and white",
+         "size": "medium"
+       },
+       "floor": {
+         "material": "tile",
+         "size": "medium"
+       },
+       "text": {
+         "phrase": "down perfect",
+         "size": "small"
+       }
+     },
+     {
+       "water cooler": {
+         "type": "gray and blue",
+         "position": "bottom",
+         "size": "large"
+       },
+       "floor": {
+         "material": "tile",
+         "size": "large"
+       },
+       "text": {
+         "phrase": "friendly",
+         "size": "small"
+       },
+       "woman": {
+         "position": "left",
+         "size": "small"
+       }
+     }
+   ]
+ }
+Time Taken: 1.6806020736694336
+
+
+
+
+
+
+
+
+
+
+
+# when told to adhere to a particular format 
+
+   "images": [
+     {
+       "image_name": "1",
+       "objects": [
+         {
+           "object_name": "water cooler",
+           "description": "A white water cooler machine with blue accents,",
+           "position": "upper left"
+         }
+       ]
+     },
+     {
+       "image_name": "2",
+       "objects": [
+         {
+           "object_name": "water cooler cover",
+           "description": "Blue plastic cover on top of the water cooler,",
+           "position": "upper right"
+         }
+       ]
+     },
+     {
+       "image_name": "3",
+       "objects": [
+         {
+           "object_name": "woman holding phone to her ear",
+           "description": "Woman in work attire, blue top and black pants,",
+           "position": "center"
+         },
+         {
+           "object_name": "long counter top",
+           "description": "Long row of silver bar stools lined up",
+           "position": "upper left"
+         },
+         {
+           "object_name": "large white machine",
+           "description": "Large industrial machine in the background,",
+           "position": "center"
+         }
+       ]
+     },
+     {
+       "image_name": "4",
+       "objects": [
+         {
+           "object_name": "water cooler bottom",
+           "description": "White water cooler sits on floor panels.",
+           "position": "lower left"
+         }
+       ]
+     }
+   ]
+ }
+Time Taken: 2.5108160972595215
+❯ python groq_image.py
+{
+   "images": [
+      {
+         "image_name": 1,
+         "objects": [
+            {
+               "object_name": "Water cooler",
+               "description": "A white water cooler with a blue tank on top",
+               "position": "center-left"
+            },
+            {
+               "object_name": "Chair",
+               "description": "A row of chairs",
+               "position": "center-right"
+            },
+            {
+               "object_name": "Person",
+               "description": "A person walking towards the camera",
+               "position": "lower-centered"
+            }
+         ]
+      },
+      {
+         "image_name": 2,
+         "objects": [
+            {
+               "object_name": "Water cooler",
+               "description": "A white water cooler with a blue tank on top",
+               "position": "center-left"
+            },
+            {
+               "object_name": "Chair",
+               "description": "A row of chairs",
+               "position": "center-right"
+            },
+            {
+               "object_name": "Person",
+               "description": "A person walking towards the camera",
+               "position": "lower-centered"
+            }
+         ]
+      }
+   ]
+}
+Time Taken: 2.386296033859253
+Prompt Tokens: 171
+Completion Tokens: 245
+Total Tokens: 416

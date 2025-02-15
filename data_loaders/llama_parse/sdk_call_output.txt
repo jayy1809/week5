@@ -1,0 +1,42 @@
+WARNING: parsing_instruction is deprecated. Use complemental_formatting_instruction or content_guideline_instruction instead.
+Started parsing the file under job_id 0d059925-7b31-45c3-8d47-d25f4d71fd71
+# Past Presidential Elections Results
+
+# October 15, 2024
+
+|VT|3|NH|10|10|Ma|11|RI|4|
+|---|---|---|---|---|---|---|---|---|
+|CT|7|DC|3|Trump|36|Poweii|29|Spotted Eagle|
+|Paul| |Kasich| |Sanders| | | | |
+
+Figure 1: Past presidential elections results in 2016
+
+| | |VT|3|NH|4|Ma|11|RI|4|
+|---|---|---|---|---|---|---|---|---|---|
+|CT|7|DC|3|Biden|38|Trump|29| | |
+
+Figure 2: Past presidential elections results in 2020
+
+Presidential election results maps for the 2016 (figure 1) and 2020 (figure 2) elections. Red denotes states won by Trump and blue denotes those won by Clinton (2016) or Biden (2020). Numbers indicate electoral votes cast by each state and the District of Columbia.
+Time taken without instruction: 13.568421840667725
+WARNING: parsing_instruction is deprecated. Use complemental_formatting_instruction or content_guideline_instruction instead.
+Started parsing the file under job_id c80b4899-3f5c-4928-bc60-b8d3fb37c1c1
+# Past Presidential Elections Results
+
+# October 15, 2024
+
+|VT|3|NH|10|10|Ma|11|RI|4|
+|---|---|---|---|---|---|---|---|---|
+|CT|7|DC|3|Trump|36|Poweii|29|Spotted Eagle|
+|Paul| |Kasich| |Sanders| | | | |
+
+Figure 1: Past presidential elections results in 2016
+
+| | |VT|3|NH|4|Ma|11|RI|4|
+|---|---|---|---|---|---|---|---|---|---|
+|CT|7|DC|3|Biden|38|Trump|29| | |
+
+Figure 2: Past presidential elections results in 2020
+
+Presidential election results maps for the 2016 (figure 1) and 2020 (figure 2) elections. Red denotes states won by Trump and blue denotes those won by Clinton (2016) or Biden (2020). Numbers indicate electoral votes cast by each state and the District of Columbia.
+Time taken with instruction: 4.308835983276367
